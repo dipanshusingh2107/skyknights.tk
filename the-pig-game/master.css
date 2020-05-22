@@ -1,0 +1,88 @@
+body{
+  background-color: black;
+}
+
+
+.outer{
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: grey;
+  display:flex;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right:5%;
+height: 50vh;
+}
+
+.left{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  background-color: pink;
+  align-items: center;
+  text-align: center;
+  padding-top: 5vh;
+  font-size: 120%;
+  font-size: 4vh;
+}
+
+.right{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  text-align: center;
+    padding-top: 5vh;
+      font-size: 4vh;
+
+}
+
+.curr-1{
+  background-color: red;
+  margin-top:auto;
+  padding: 4%;
+  margin-bottom: 5vh;
+width:45%;
+font-size: 100%;
+}
+
+
+
+
+
+.curr-2{
+  background-color: red;
+  margin-top:auto;
+    padding: 4%;
+    margin-bottom: 5vh;
+    width:45%;
+    font-size: 100%;
+}
+
+
+
+.new{
+  position: absolute;
+  background-color: blue;
+  margin-top:5vh;
+  font-size: 4vh;
+
+}
+
+
+.roll{
+  position: absolute;
+  background-color: blue;
+  margin-top: 33vh;
+  font-size: 2vw;
+}
+.hold{
+  position: absolute;
+  background-color: blue;
+  margin-top: 39vh;
+  font-size: 2vw;
+}
