@@ -4,15 +4,20 @@
   box-sizing: border-box;
 }
 
+html{
+  font-size: 63%;
+}
+
+
+
 
 body{
   font-style: "Lato" ,san-serif;
    font-weight: 400;
-   font-size: 16px;
+   font-size: 1.6rem;
    line-height: 1.7;
    color: #777;
-
-}
+  }
 
 header{
   height: 95vh;
@@ -29,13 +34,13 @@ clip-path: polygon(0% 0%,100% 0%,100% 75vh ,0% 100%);
 
 .logo-box{
   position:absolute;
-  top:40px;
-  left:40px;
+  top:4rem;
+  left:4rem;
 
 }
 
 .logo{
-  height: 40px;
+  height: 4rem;
 
 }
 
@@ -57,8 +62,8 @@ clip-path: polygon(0% 0%,100% 0%,100% 75vh ,0% 100%);
 
 .mainhead{
   display: block;
-  font-size:60px;
-  letter-spacing:51px;
+  font-size:6rem;
+  letter-spacing:5.1rem;
   font-weight: 700;
   animation: moveright;
   animation-duration: 2s;
@@ -68,14 +73,14 @@ animation-timing-function: ease-out; /* shows how fast and slow the animation wi
 
 .subhead{
   display: block;
-font-size: 30px;
+font-size: 3rem;
 font-weight: 100;
-letter-spacing: 17px;
+letter-spacing: 1.7rem;
 
 animation: moveleft;
 animation-duration: 2s;
 animation-timing-function: ease-out;
-margin-bottom: 50px;
+margin-bottom: 5rem;
 
 }
 
@@ -90,7 +95,7 @@ margin-bottom: 50px;
 
 70%{
   opacity: 0.7;
-  transform: translateX(20px);
+  transform: translateX(2rem);
 }
 
 
@@ -106,12 +111,12 @@ margin-bottom: 50px;
 @keyframes moveleft {
   0%{
     opacity:  0;
-    transform: translateX(400px);
+    transform: translateX(4rem);
   }
 
 70%{
   opacity: 0.7;
-  transform: translateX(-20px);
+  transform: translateX(-2rem);
 }
 
 
@@ -128,25 +133,26 @@ margin-bottom: 50px;
 
 
 .btn{
-  border-radius: 100px;
-  padding: 15px 40px;
+  border-radius: 10rem;
+  padding: 1.5rem 4rem;
 text-decoration: none;
 transition: all 0.2s ;   /* alternative of @keyframes animation it makes transition smooth and not abrupt changes */
 display: inline-block;
 animation-fill-mode: backwards;
+font-size: 3rem;
 }
 
 
 .btn:hover{
 transform: translateY(-3px);
-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 
 }
 
 
 .btn:active{
 transform: translateY(1px);
-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 
 }
 
