@@ -1,0 +1,31 @@
+.btn {
+    border-radius: 10rem;
+    padding: 1.5rem 4rem;
+    text-decoration: none;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    /* alternative of @keyframes animation it makes transition smooth and not abrupt changes */
+    display: inline-block;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+    font-size: 3rem;
+  }
+  
+  .btn:hover {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+    -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn:active {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+    -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-white {
+    background-color: white;
+    color: #777;
+  }

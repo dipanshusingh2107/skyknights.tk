@@ -1,0 +1,44 @@
+.heading {
+    color: white;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    /*it is to avoid shakiness in animation */
+  }
+  
+  .mainhead {
+    display: block;
+    font-size: 6rem;
+    letter-spacing: 5.1rem;
+    font-weight: 700;
+    -webkit-animation: moveright;
+            animation: moveright;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    /* shows how fast and slow the animation will go it is fast at beg and slow at end  */
+  }
+  
+  .subhead {
+    display: block;
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: 1.7rem;
+    -webkit-animation: moveleft;
+            animation: moveleft;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    margin-bottom: 5rem;
+  }
+  
+  
+
+  body {
+        font-style: "Lato" ,san-serif;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 1.7;
+        color: #777;
+      }
