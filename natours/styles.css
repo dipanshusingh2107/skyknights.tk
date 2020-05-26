@@ -1,0 +1,190 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 63%;
+}
+
+body {
+  font-style: "Lato" ,san-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777;
+}
+
+header {
+  height: 95vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(125, 212, 110, 0.8)), to(rgba(41, 179, 130, 0.8))), url("images/hero.jpg");
+  background-image: linear-gradient(to bottom right, rgba(125, 212, 110, 0.8), rgba(41, 179, 130, 0.8)), url("images/hero.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
+}
+
+.logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.logo {
+  height: 4rem;
+}
+
+.textbox {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading {
+  color: white;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  /*it is to avoid shakiness in animation */
+}
+
+.mainhead {
+  display: block;
+  font-size: 6rem;
+  letter-spacing: 5.1rem;
+  font-weight: 700;
+  -webkit-animation: moveright;
+          animation: moveright;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  /* shows how fast and slow the animation will go it is fast at beg and slow at end  */
+}
+
+.subhead {
+  display: block;
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: 1.7rem;
+  -webkit-animation: moveleft;
+          animation: moveleft;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  margin-bottom: 5rem;
+}
+
+@-webkit-keyframes moveright {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-40%);
+            transform: translateX(-40%);
+  }
+  70% {
+    opacity: 0.7;
+    -webkit-transform: translateX(2rem);
+            transform: translateX(2rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes moveright {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-40%);
+            transform: translateX(-40%);
+  }
+  70% {
+    opacity: 0.7;
+    -webkit-transform: translateX(2rem);
+            transform: translateX(2rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes moveleft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(4rem);
+            transform: translateX(4rem);
+  }
+  70% {
+    opacity: 0.7;
+    -webkit-transform: translateX(-2rem);
+            transform: translateX(-2rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes moveleft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(4rem);
+            transform: translateX(4rem);
+  }
+  70% {
+    opacity: 0.7;
+    -webkit-transform: translateX(-2rem);
+            transform: translateX(-2rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+.btn {
+  border-radius: 10rem;
+  padding: 1.5rem 4rem;
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  /* alternative of @keyframes animation it makes transition smooth and not abrupt changes */
+  display: inline-block;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  font-size: 3rem;
+}
+
+.btn:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: white;
+  color: #777;
+}
+/*# sourceMappingURL=styles.css.map */
