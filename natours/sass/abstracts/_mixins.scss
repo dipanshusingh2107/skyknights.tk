@@ -5,3 +5,28 @@ clear:both;
 display: table;
     }
 }
+
+
+@mixin button-shadow-hover{
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+@mixin button-shadow-active{
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+
+@mixin btn-click-effect{
+    &:hover{background-color: $light-green;
+        transform: translateY(-.5rem);
+        color:white;
+        background-color: $light-green;
+@include  button-shadow-hover;
+  }
+
+  &:active{
+      transform: translateY(.3rem);
+      @include button-shadow-active;
+  }
+}

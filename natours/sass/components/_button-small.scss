@@ -1,0 +1,18 @@
+.button-small
+{
+    border-bottom-color: $light-green;
+    border-bottom-width: .2rem;
+    border-bottom-style: solid;
+    color:white;
+    text-decoration: none;
+    display: inline-block;
+    width: 17rem;
+    font-size: 2.5rem;
+    text-align: center;
+    color:$light-green;
+    
+
+    @include btn-click-effect;
+
+
+}
