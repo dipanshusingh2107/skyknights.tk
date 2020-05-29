@@ -2,5 +2,20 @@
     background-color:$light-grey;
     padding-top: 30rem;
     margin-top: -20vh;
+    padding-bottom: 30rem;;
 }
 
+.features{
+    background-image: linear-gradient(to right,$light-green,$dark-green), url('../images/nat-4.jpg');
+    background-size:cover;
+    padding:4rem;
+    padding-right: 0;
+    padding-left: 0;
+    height:75rem;
+transform: skewY(-5deg);
+margin-top: -10rem;
+
+&>*{   // direct child selector 
+    transform:skewY(5deg);
+}
+}
