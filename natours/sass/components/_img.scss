@@ -1,0 +1,47 @@
+.composition{
+   
+   position:relative;
+   height:40rem;
+
+
+
+
+
+&__img{
+   width:$img-width-medium;
+   position:absolute;
+   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.418);
+   &:hover{
+      transform:scale(1.1,1.1) translateY(-4rem);
+      box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.623);
+
+      outline:$dark-green solid 1rem;
+      outline-offset: 1rem;
+      z-index: 10;
+
+
+   }
+
+   
+}
+
+   &__img-1{
+      top:30%;
+
+   }
+   &__img-2{
+   
+  left:30%;
+  z-index: 1;
+
+   }
+   
+   &__img-3{
+      
+      top:30%;
+      left:50%;
+      z-index: 0;
+   }
+
+
+}

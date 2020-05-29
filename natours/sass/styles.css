@@ -242,6 +242,43 @@ body {
           box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
+.composition {
+  position: relative;
+  height: 40rem;
+}
+
+.composition__img {
+  width: 45%;
+  position: absolute;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.418);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.418);
+}
+
+.composition__img:hover {
+  -webkit-transform: scale(1.1, 1.1) translateY(-4rem);
+          transform: scale(1.1, 1.1) translateY(-4rem);
+  -webkit-box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.623);
+          box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.623);
+  outline: rgba(41, 179, 130, 0.8) solid 1rem;
+  outline-offset: 1rem;
+  z-index: 10;
+}
+
+.composition__img-1 {
+  top: 30%;
+}
+
+.composition__img-2 {
+  left: 30%;
+  z-index: 1;
+}
+
+.composition__img-3 {
+  top: 30%;
+  left: 50%;
+  z-index: 0;
+}
+
 header {
   height: 95vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(125, 212, 110, 0.8)), to(rgba(41, 179, 130, 0.8))), url("../images/hero.jpg");
@@ -277,6 +314,7 @@ header {
 .row {
   max-width: 120rem;
   margin: 0px auto;
+  height: auto;
 }
 
 .row:after {
@@ -287,6 +325,7 @@ header {
 
 .col-1 {
   width: calc((100% - 4rem)/2);
+  height: inherit;
   margin-right: 4rem;
   float: left;
 }

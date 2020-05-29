@@ -1,6 +1,7 @@
 .row{
     max-width: $row-maxwidth;
     margin:0px auto;
+    height: auto ;
 @include clearfix;
 
 
@@ -13,6 +14,7 @@
 .col-1{
 
 width: calc((100% - #{$gutter-horizontal})/2);
+height:inherit;
 margin-right: $gutter-horizontal;
 float: left;
 
