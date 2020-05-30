@@ -8,10 +8,11 @@
 .features{
     background-image: linear-gradient(to right,$light-green,$dark-green), url('../images/nat-4.jpg');
     background-size:cover;
-    padding:4rem;
+    padding-top:4rem;
+    padding-bottom: 13rem;
     padding-right: 0;
     padding-left: 0;
-    height:75rem;
+    height:auto;
 transform: skewY(-5deg);
 margin-top: -10rem;
 

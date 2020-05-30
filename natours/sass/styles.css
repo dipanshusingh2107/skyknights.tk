@@ -385,10 +385,11 @@ header {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(125, 212, 110, 0.8)), to(rgba(41, 179, 130, 0.8))), url("../images/nat-4.jpg");
   background-image: linear-gradient(to right, rgba(125, 212, 110, 0.8), rgba(41, 179, 130, 0.8)), url("../images/nat-4.jpg");
   background-size: cover;
-  padding: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 13rem;
   padding-right: 0;
   padding-left: 0;
-  height: 75rem;
+  height: auto;
   -webkit-transform: skewY(-5deg);
           transform: skewY(-5deg);
   margin-top: -10rem;
